@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <title>Website Design Using HTML And CSS</title>
+        <link rel="stylesheet" href="style.css">  
+    </head>
+
+
+    <body>
+        <div class="main">
+          <nav>
+            <div class="logo">
+                <img src="images/pocox3logo.png">
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#index.html">Home</a></li>
+                    <li><a href="https://www.mistore-greece.gr/?gclid=CjwKCAjwj42UBhAAEiwACIhADiDOZ0IREWnQlV32Yv-8oltj_ad81BxxsfFDQOX2sw23aObllrQV1xoCXREQAvD_BwE">Phone</a></li>
+                    <li><a href="https://www.amazon.com/Compatible-Xiaomi-Poco-X3-NFC/dp/B08LNWC7R6">Accessories</a></li>
+                    <li><a href="#">Cart</a></li>
+                </ul>
+            </div>
+         </nav>
+         </div>
+         <div class="information">
+             <div class="overlay"></div>
+             <img src="images/mobile.png" class="mobile">
+           <div id="circle">
+           <div class="feature one">
+              <img src="images/camera.png">
+              <div>
+              <h1>Camera</h1>
+              <p>64MP quad camera AI</p>
+              </div>
+           </div>
+           <div class="feature two">
+            <img src="images/processor.png">
+            <div>
+                <h1>Processor</h1>
+                <p>Qualcomm Snapdragon 732G</p>
+                </div>
+           </div>
+           <div class="feature three">
+            <img src="images/display.png">
+            <div>
+                <h1>Display</h1>
+                <p>6.67 "DotDisplay screen</p>
+                </div>
+           </div>
+           <div class="feature four">
+            <img src="images/battery.png">
+            <div>
+                <h1>Battery Life</h1>
+                <p>5160mAh battery, 720Hrs standby</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="controls">
+            <img src="images/arrow.png" id="upBtn">
+            <h3>Features</h3>
+            <img src="images/arrow.png" id="downBtn">
+        </div>
+     </div>
+
+      <!--js-->
+
+      <script>
+          var circle = document.getElementById("circle")
+          var upBtn = document.getElementById("upBtn")
+          var downBtn = document.getElementById("downBtn")
+
+          var rotateValue= circle.style.transform;
+          var rotateSum;
+
+          upBtn.onclick = function()
+          {
+              rotateSum = rotateValue + "rotate(-90deg)";
+              circle.style.transform = rotateSum;
+              rotateValue = rotateSum;
+          }
+
+
+
+
+          downBtn.onclick = function()
+          {
+              rotateSum = rotateValue + "rotate(90deg)";
+              circle.style.transform = rotateSum;
+              rotateValue = rotateSum;
+          }
+
+      </script>
+
+
+
+
+ </body>
+</html>
